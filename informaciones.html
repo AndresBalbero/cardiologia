@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Asistencia Medica En Cardiología</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/banner.png" alt="" width="400px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="pagina_principal.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Registro De
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="datos_de_usuario.html">Usuario</a></li>
+                <li><a class="dropdown-item" href="datos_de_profesional.html">Profesional</a></li>
+                <li><a class="dropdown-item" href="datos_de_paciente.html">Paciente</a></li>
+                <li><a class="dropdown-item" href="historial_de_paciente.html">Historial</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="informaciones.html" tabindex="-1" aria-disabled="true">Información</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="especialidades.html" tabindex="-1" aria-disabled="true">Especialidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="consultas.html" tabindex="-1" aria-disabled="true">Consultas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tratamientos.html" tabindex="-1" aria-disabled="true">Tratamientos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="close">Salir</a>
+              </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </form>
+          <div class="col-lg-2">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a href="http://www.facebook.com"><img src="img/Facebook.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://www.instagram.com"><img src="img/Instagram.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://www.twitter.com"><img src="img/Twitter.png" alt=""></a>
+                </li>
+            </ul>
+         </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/Carrusel1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-success">
+            <h5>¿Quienes Somos?</h5>
+            <p>Ayudantes</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Carrusel2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-success">
+            <h5>¿Quienes Somos?</h5>
+            <p>Ayudantes</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Carrusel3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-success">
+            <h5>¿Quienes Somos?</h5>
+            <p>Ayudantes</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+    <div class="container">
+    <div class="row py-4">
+      <hr class="border border-dark opacity-75 mt-5">
+      <h4 class="text-center"><span>Informaciones Cardiológicas</span></h4>
+      <hr class="border border-dark opacity-75">
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col">
+          <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+            <img src="img/Card1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Insuficiencia Cardiaga</h5>
+              <p class="card-text">Esta enfermedad se produce cuando hay un desequilibrio entre la capacidad del corazón para bombear sangre y las necesidades del organismo. 
+                El corazón puede fallar debido a un problema propio o porque su capacidad de reaccionar no alcanza a satisfacer lo que el organismo le pide. Los síntomas de la insuficiencia cardíaca son: 
+                cansancio anormal al hacer un esfuerzo, dificultad de respirar acostado, mala tolerancia al ejercicio, retención de líquidos y falta de aire con el esfuerzo.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <small class="text-body-secondary">24/04/2023</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+            <img src="img/Card2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Hipertensión Arterial</h5>
+              <p class="card-text">Esta enfermedad es conocida como tensión arterial alta, aumentando el riesgo de tener un ataque al corazón. 
+                Se produce por un estrechamiento de arterias pequeñas que son llamadas arteriolas que son las encargadas de regular el flujo sanguíneo, 
+                y cuando estás se van haciendo más pequeñas el corazón debe esforzarse más de su capacidad para cumplir con su función lo que ocasiona la presión en los vasos sanguíneos.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <small class="text-body-secondary">24/04/2023</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+            <img src="img/Card3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Hipercolesterolemia o exceso de Colesterol</h5>
+              <p class="card-text">El colesterol perjudica seriamente la salud. Para controlarlo es recomendable tener una dieta equilibrada y practicar ejercicio con regularidad. 
+                Existen diversas causas que pueden hacer que los niveles de colesterol suban por encima de lo aceptable. 
+                Generalmente, no se producen síntomas hasta que aparece la enfermedad vascular, por lo que para diagnosticar esta enfermedad se debe realizar una analítica de sangre que determine el colesterol total.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <small class="text-body-secondary">24/04/2023</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+              <img src="img/Card4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Infarto de Miocardio</h5>
+                <p class="card-text">Cuando una arteria se obstruye puede ocasionar que se presente un infarto, ya que se tiene una disminución del oxígeno a las células del corazón, 
+                    lo que provoca la muerte de las células y que se destruya una parte del músculo cardíaco.
+                </p>
+                <p>
+                    El proceso que suele llevarse a cabo cuando se va a presentar un infarto comienza cuando las arterias se tapan, y el oxígeno no puede llegar al miocardio, 
+                    y esto a su vez impide que el corazón pueda bombear sangre, y que las células del tejido no reciban sangre ocasionando su muerte. 
+                </p>
+                <p>
+                    El síntoma más característico de un infarto de miocardio es un dolor agudo en el pecho.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <small class="text-body-secondary">24/04/2023</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+              <img src="img/Card5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Angina de Pecho</h5>
+                <p class="card-text">Se produce cuando no fluye la sangre necesaria en el corazón debido a problemas de obstrucción en las arterias coronarias. 
+                    El síntoma principal en el paciente que lo sufre es una fuerte presión en el pecho.
+                </p>
+                <p>
+                    El dolor de la angina de pecho a menudo se describe como un dolor constrictivo, presión, pesadez, opresión o dolor en el pecho. Puedes sentir como si tuvieras un gran peso apoyado en el pecho. 
+                    Es posible que la angina de pecho sea un dolor nuevo que un proveedor de atención médica deba controlar o un dolor recurrente que desaparece con el tratamiento.
+                </p>
+                <p>
+                    Aunque la angina de pecho es bastante común, igualmente puede ser difícil de distinguir de otros tipos de dolor de pecho, como las molestias causadas por la indigestión. 
+                    Si sientes dolor de pecho sin causa aparente, busca atención médica de inmediato.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <small class="text-body-secondary">24/04/2023</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+              <img src="img/Card6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Trastornos del ritmo Cardíaco</h5>
+                <p class="card-text">Los trastornos del ritmo cardíaco suelen ser muy frecuentes, pero ello no quiere decir que se padezca de alguna enfermedad. 
+                    Algunas de las situaciones que vivimos a diario pueden hacer que el ritmo cardíaco sea más lento o más rápido, por lo que prestar atención a estos cambios te podrá ayudar a identificar cuando sí se trate de alguna enfermedad. 
+                    Cuando se tienen menos de 60 pulsaciones, se trata de un trastorno lento, pero algunos deportistas tienen estás pulsaciones sin encontrarse enfermos. Por el contrario, cuando se tienen más de 100 pulsaciones por minuto se trata de un trastorno rápido que suelen ser las taquicardias.
+                </p>
+                <p>Si tienes alguno de los síntomas anteriormente mencionados, acude a un especialista en Cardiología cuanto antes. 
+                    Cardiavant tendrás a tu disposición un amplio equipo médico especializado en este tipo de enfermedades para llevar a cabo el diagnóstico y tratamiento se este tipo de patologías. Llámanos y pide cita.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <small class="text-body-secondary">24/04/2023</small>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer>
+    <div class="row bg-light py-4">
+     <div class="col-lg-4">
+       <p class="text-end text-center text-dark mt-4">©Copyright 2023 Andrés Felipe Balbero</p>
+     </div>
+     <div class="col-lg-4">
+       <p class="text-end text-center text-dark mt-4">Clinica Santa Maria S.A.S</p>
+     </div>
+     <div class="col-lg-4">
+       <p class="text-end text-center text-dark mt-4">Telefono De La Unidad Cardiodiagnostico: (605) 2815665</p>
+     </div>
+     <div class="col-lg-4">
+       <p class="text-end text-center text-dark mt-4">Telefono De La Clinica: 3106538194</p>
+     </div>
+     <div class="col-lg-4">
+       <p class="text-end text-center text-dark mt-4">País: Colombia</p>
+     </div>
+     <div class="col-lg-4">
+       <p class="text-end text-center text-dark mt-4">Lugar: Sincelejo, Sucre</p>
+     </div>
+     <div class="col-lg-4">
+       <p class="text-end text-center text-dark mt-4">Barrio: La Ford</p>
+     </div>
+     <div class="col-lg-4">
+       <p class="text-end text-center text-dark mt-4">Dirección: Carrera 22 #16A-47</p>
+     </div>
+     <div class="col-lg-4">
+       <p class="text-end text-center text-dark mt-4">Citas Medicas: 2812435-2815531</p>
+     </div>
+     <div class="col-lg-6">
+       <p class="text-end text-center text-dark mt-5">Hora: 8:00am a 18:00pm</p>
+     </div>
+     <div class="col-lg-6">
+     <p class="text-end text-center text-dark mt-3">Siguenos En Redes Sociales</p>
+       <ul class="nav justify-content-center gap-2 py-3">
+           <li class="nav-item bg-primary">
+            <a class="nav-link bi-facebook text-light" aria-current="page" href="https://es-la.facebook.com/">Facebook</a>
+           </li>
+           <li class="nav-item bg-danger">
+             <a class="nav-link bi-instagram text-light" href="https://www.instagram.com/?hl=es">Instagram</a>
+           </li>
+           <li class="nav-item bg-primary">
+              <a class="nav-link bi-twitter text-light" href="https://twitter.com/">Twitter</a>
+           </li>
+       </ul>
+     </div>
+    </div>
+   </footer>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+</html>

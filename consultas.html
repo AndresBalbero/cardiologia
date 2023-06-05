@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Asistencia Medica En Cardiología</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/banner.png" alt="" width="400px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="pagina_principal.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Registro De
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="datos_de_usuario.html">Usuario</a></li>
+                <li><a class="dropdown-item" href="datos_de_profesional.html">Profesional</a></li>
+                <li><a class="dropdown-item" href="datos_de_paciente.html">Paciente</a></li>
+                <li><a class="dropdown-item" href="historial_de_paciente.html">Historial</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="informaciones.html" tabindex="-1" aria-disabled="true">Información</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="especialidades.html" tabindex="-1" aria-disabled="true">Especialidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="consultas.html" tabindex="-1" aria-disabled="true">Consultas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tratamientos.html" tabindex="-1" aria-disabled="true">Tratamientos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="close">Salir</a>
+              </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </form>
+          <div class="col-lg-2">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a href="http://www.facebook.com"><img src="img/Facebook.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://www.instagram.com"><img src="img/Instagram.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://www.twitter.com"><img src="img/Twitter.png" alt=""></a>
+                </li>
+            </ul>
+         </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/Carrusel1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-success">
+            <h5>¿Quienes Somos?</h5>
+            <p>Ayudantes</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Carrusel2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-success">
+            <h5>¿Quienes Somos?</h5>
+            <p>Ayudantes</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Carrusel3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-success">
+            <h5>¿Quienes Somos?</h5>
+            <p>Ayudantes</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+    <div class="container">
+    <div class="row py-4">
+      <hr class="border border-dark opacity-75 mt-5">
+      <h4 class="text-center"><span>Consultas Cardiológicas</span></h4>
+      <hr class="border border-dark opacity-75">
+      
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col">
+          <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+            <div class="card-body">
+              <h5 class="card-title text-center mt-3">Consulta Cardiológica</h5>
+              <p class="card-text">Las enfermedades cardiovasculares son uno de los principales motivos de consulta médica, además son la primera causa de fallecimiento en España, 
+                especialmente el infarto de miocardio, accidente cerebrovasculares y las arritmias.
+              </p>
+              <p>
+                Llevar un control óptimo del estado del sistema cardiovascular previene complicaciones y el desarrollo de este tipo de patologías. Además, 
+                permite controlar el estado cardiovascular de pacientes con patologías o riesgo de padecer enfermedades cardiovasculares.
+              </p>
+              <ul>
+              <li>
+              <p>
+                 A partir de los 45 años se debe acudir a la consulta del cardiólogo anualmente.
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                 Los pacientes con hipertensión y colesterol alto deben acudir lo antes posible.
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                 Sentir dolor en el pecho, palpitaciones o dificultad para respirar son síntomas que alertan de una posible anomalía en el sistema cardiovascular.
+              </p>
+              </li>
+              </ul>             
+              <p class="text-center">
+                Primer paso: Historia clínica 
+              </p>
+              <p>
+                En primer lugar, se completa de manera detallada la historia clínica del paciente. Para ello, se le pregunta sobre antecedentes personales y familiares. «Hay que tener en cuenta que las enfermedades cardiovasculares tienen una importante carga genética», afirma el doctor.
+                También se realizan preguntas para conocer la posible aparición de síntomas y el tiempo de la sintomatología.
+              </p>
+              <p class="text-center">
+                Segundo paso: Exploración física detallada 
+              </p>
+              <p>
+                A continuación se realiza una exploración física detallada. 
+                En función de esto, el médico decidirá qué pruebas cardiológicas son necesarias para completar el estudio del paciente.
+              </p>
+              <p class="text-center">
+                Tercer paso: Realización de pruebas cardiológicas 
+              </p>
+              <p>
+                El Dr. Cárdenes señala que, generalmente, las pruebas que suelen realizarse en una consulta de cardiología son un electrocardiograma basal en reposo y un ecocardiograma doppler, donde se estudia la anatomía del corazón, la funcionalidad de las válvulas del músculo cardíaco así la contractividad de los diferentes territorios.
+                Otra prueba que se lleva a cabo en consulta es la prueba de esfuerzo o ergometría donde se monitoriza, durante las diferentes etapas del ejercicio, tanto la tensión arterial como el registro electrocardiográfico.
+                «Con esta prueba se busca descartar la aparición de enfermedades en las arterias del corazón así como la inducción de eventos arrítmicos durante la actividad física», comenta el Dr. Cárdenes.
+                Durante la consulta cardiológica también se puede colocar un holter de monitorización electrocardiográfica. Explica el doctor que con esta prueba se tiene una monitorización continua durante 24 horas para estudiar eventos arrítmicos o pausas importantes del corazón.
+                Por último, también puede ponerse un holter de tensión arterial durante 24 horas que realizará diferentes mediciones de la tensión arterial cada cierto intervalo de tiempo.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <small class="text-body-secondary">24/04/2023</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+            <div class="card-body">
+              <h5 class="card-title text-center mt-3">Consulta para prevenir</h5>
+              <p class="card-text">El corazón es el órgano más importante en el cuerpo, sin embargo muchas personas no recuerdan añadir a su agenda de chequeos regulares la cita con el cardiólogo. 
+                Tan sólo lo recuerdan en el momento en que sufren algún daño, malestar o síntoma avanzado.
+              </p>
+              <p>
+                En la consulta cardiológica se produce una importante comunicación entre médico - paciente, que es el primer paso para comprobar en qué estado se encuentra el sistema cardiovascular del paciente.
+              </p>
+              <p class="text-center">
+                ¿Qué es la cardiología preventiva?
+              </p>
+              <p>
+                La alta incidencia y la elevada mortalidad por enfermedades como la cardiopatía isquémica han ido concienciando a la sociedad para realizar campañas de prevención, sensibilización y mentalización. 
+                El objetivo de la cardiología preventiva es tratar de evitar y combatir los principales factores de riesgo cardiovascular:
+              </p>
+              <ul>
+              <li>
+              <p>
+                Prevención primaria: Hace referencia a la serie de pruebas y consejos para evitar la aparición de enfermedades o problemas cardíacos. 
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                Prevención primaria: Hace referencia a la serie de pruebas y consejos para evitar la aparición de enfermedades o problemas cardíacos. 
+              </p>
+              </li>
+              </ul> 
+              <p class="text-center">
+                ¿Por qué se realiza?
+              </p>
+              <ul>
+              <li>
+              <p>
+                Obesidad: La obesidad es un factor de riesgo para numerosas enfermedades cardiovasculares y respiratorias.
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                Diabetes: En los pacientes con diabetes, la glucosa se eleva a la sangre, deteriora los vasos sanguíneos y acelera la arterioesclerosis, 
+                siendo un factor de riesgo importante para las enfermedades cardíacas y accidentes cerebrovasculares.
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                Tabaquismo: Según los datos de la Fundación Española del Corazón, el riesgo de padecer una enfermedad cardiovascular es 3 veces mayor en fumadores.
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                Hipertensión arterial: La enfermedad por niveles altos de presión arterial es considerada uno de los principales problemas de salud en los países desarrollados. 
+                Es asintomática y conviene detectarla y controlarla.
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                Sedentarismo: Unos hábitos de vida carentes de actividad física también son perjudiciales para la salud cardiovascular, ya que conducen a la obesidad. 
+                En cambio, realizar ejercicio y llevar una dieta saludable
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                Hipercolesterolermia: Las personas que presentan normalmente el colesterol alto cuentan con el doble de riesgo de presentar una enfermedad cardiovascular, sobre todo el infarto y la arterioesclerosis.
+              </p>
+              </li>
+              </ul>
+            </div>
+            <div class="card-footer text-center">
+              <small class="text-body-secondary">24/04/2023</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+            <div class="card-body">
+              <h5 class="card-title text-center mt-3">¿Quién debe acudir a la consulta de cardiología?</h5>
+              <p class="card-text">Los cardiólogos recuerdan que a partir de los 40-50 años se debe acudir a la consulta de cardiología como método preventivo, aún cuando gocen de buena salud. Los especialistas advierten que no es recomendable llegar a los 60 años sin haber realizado una revisión cardiológica, 
+                ya que el riesgo de sufrir problemas cardiovasculares aumenta a partir de los 40 años en los hombres y a partir de la menopausia en las mujeres.
+              </p>
+              <p>
+                Deberán acudir especialmente aquellas personas que, aún asintomáticos, tengan antecedentes familiares de enfermedades cardiovasculares, superen los 45 años y tengan factores de riesgo, como ser fumador, diabetes, hipertensión o colesterol alto. 
+                En estos casos, la visita a la consulta cardiológica deberá ser anual.
+              </p>
+              <p>
+                También deben asistir pacientes con enfermedades cardiovasculares ya diagnosticadas para realizar un correcto seguimiento del tratamiento y de la patología.
+              </p>
+              <p class="text-center">
+                ¿Cuándo debemos visitar al cardiólogo? Cuatro síntomas que pueden ponernos sobre aviso
+              </p>
+              <p>
+                Acudir al cardiólogo cuando notamos que algo no marcha bien puede evitar más de un susto. Por eso es importante prestar atención a ciertas señales de alarma con las que nuestro organismo nos avisa de que necesitamos acudir al médico.
+              </p>
+              <p class="text-center">
+                ¿Cómo se lleva a cabo la consulta de cardiología?
+              </p>
+              <p>
+                La consulta la dirige el cardiólogo, médico especializado en el diagnóstico, tratamiento y prevención de enfermedades propias del sistema cardiovascular. Éste comienza la consulta realizando una serie de preguntas rutinarias al paciente para completar su historial médico y conocer los motivos de la consulta, posibles síntomas o antecedentes familiares.
+                A continuación, procede a realizar una exploración física que le aporte pruebas e indicios del estado de salud en el que se encuentra el paciente. Para ello, también se valdrá de dos pruebas: un electrocardiograma, que registra la actividad eléctrica del corazón, y un ecocardiograma doppler color con equipos de última generación para observar el movimiento del corazón.
+                En caso de ser necesario, según la historia clínica y estado del paciente, el cardiólogo mandará realizar una prueba de esfuerzo.
+                Al finalizar el cardiólogo ya tiene toda la información necesaria para determinar en qué estado de salud cardiovascular se encuentra el paciente y si requiere de pruebas complementarias para fijar el diagnóstico.
+                En Cardiavant contamos con el equipamiento tecnológica más avanzado y un equipo médico de profesionales especializados en distintas áreas cardiológicas para atender al paciente, realizar diagnósticos exactos y fijar tratamientos eficaces.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <small class="text-body-secondary">24/04/2023</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+              <div class="card-body">
+                <h5 class="card-title text-center mt-3">Síntomas que alertan de la necesidad de acudir a una consulta cardiológica</h5>
+                <p class="card-text">Es imprescindible acudir a la consulta del cardiólogo al sentir los siguientes síntomas:
+                </p>
+                <ul>
+                <li>
+                <p>
+                    Dolor en el pecho
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                    Palpitaciones
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                    Dificultad para respirar o sensación de ahogo
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                    Dolor de cabeza
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                    Fatiga
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                  Hinchazón en los miembros inferiores
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                  Mareos
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                  Pacientes diabéticos
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                  Disfunción eréctil
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                  Frecuencia cardíaca anormalmente rápida o lenta
+                </p>
+                </li>
+                </ul>
+              </div>
+              <div class="card-footer text-center">
+                <small class="text-body-secondary">24/04/2023</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+              <div class="card-body">
+                <h5 class="card-title text-center mt-3">Cómo se lleva a cabo la consulta de Cardiología</h5>
+                <p class="card-text">La consulta la dirige el cardiólogo, médico especializado en el diagnóstico, tratamiento y prevención de enfermedades propias del sistema cardiovascular. 
+                    Éste comienza la consulta realizando una serie de preguntas rutinarias al paciente para completar su historial médico y conocer los motivos de la consulta, posibles síntomas o antecedentes familiares.
+                </p>
+                <p>
+                    A continuación, procede a realizar una exploración física que le aporte pruebas e indicios del estado de salud en el que se encuentra el paciente. Para ello, también se valdrá de dos pruebas: 
+                    Un electrocardiograma, que registra la actividad eléctrica del corazón, y un ecocardiograma doppler color con equipos de última generación para observar el movimiento del corazón.
+                </p>
+                <p>
+                    En caso de ser necesario, según la historia clínica y estado del paciente, el cardiólogo mandará realizar una prueba de esfuerzo.
+                </p>
+                <p>
+                    Al finalizar el cardiólogo ya tiene toda la información necesaria para determinar en qué estado de salud cardiovascular se encuentra el paciente y si requiere de pruebas complementarias para fijar el diagnóstico.
+                </p>
+                <p>
+                    En Cardiavant contamos con el equipamiento tecnológica más avanzado y un equipo médico de profesionales especializados en distintas áreas cardiológicas para atender al paciente, realizar diagnósticos exactos y fijar tratamientos eficaces.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <small class="text-body-secondary">24/04/2023</small>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      </div>
+      </div>
+      </div>
+      
+      <footer>
+        <div class="row bg-light py-4">
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">©Copyright 2023 Andrés Felipe Balbero</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">Clinica Santa Maria S.A.S</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">Telefono De La Unidad Cardiodiagnostico: (605) 2815665</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">Telefono De La Clinica: 3106538194</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">País: Colombia</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">Lugar: Sincelejo, Sucre</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">Barrio: La Ford</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">Dirección: Carrera 22 #16A-47</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">Citas Medicas: 2812435-2815531</p>
+         </div>
+         <div class="col-lg-6">
+           <p class="text-end text-center text-dark mt-5">Hora: 8:00am a 18:00pm</p>
+         </div>
+         <div class="col-lg-6">
+         <p class="text-end text-center text-dark mt-3">Siguenos En Redes Sociales</p>
+           <ul class="nav justify-content-center gap-2 py-3">
+               <li class="nav-item bg-primary">
+                <a class="nav-link bi-facebook text-light" aria-current="page" href="https://es-la.facebook.com/">Facebook</a>
+               </li>
+               <li class="nav-item bg-danger">
+                 <a class="nav-link bi-instagram text-light" href="https://www.instagram.com/?hl=es">Instagram</a>
+               </li>
+               <li class="nav-item bg-primary">
+                  <a class="nav-link bi-twitter text-light" href="https://twitter.com/">Twitter</a>
+               </li>
+           </ul>
+         </div>
+        </div>
+       </footer>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+</html>

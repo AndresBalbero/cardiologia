@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Asistencia Medica En Cardiología</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/banner.png" alt="" width="400px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="pagina_principal.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Registro De
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="datos_de_usuario.html">Usuario</a></li>
+                <li><a class="dropdown-item" href="datos_de_profesional.html">Profesional</a></li>
+                <li><a class="dropdown-item" href="datos_de_paciente.html">Paciente</a></li>
+                <li><a class="dropdown-item" href="historial_de_paciente.html">Historial</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="informaciones.html" tabindex="-1" aria-disabled="true">Información</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="especialidades.html" tabindex="-1" aria-disabled="true">Especialidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="consultas.html" tabindex="-1" aria-disabled="true">Consultas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tratamientos.html" tabindex="-1" aria-disabled="true">Tratamientos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="close">Salir</a>
+              </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </form>
+          <div class="col-lg-2">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a href="http://www.facebook.com"><img src="img/Facebook.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://www.instagram.com"><img src="img/Instagram.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://www.twitter.com"><img src="img/Twitter.png" alt=""></a>
+                </li>
+            </ul>
+         </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/Carrusel1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-success">
+            <h5>¿Quienes Somos?</h5>
+            <p>Ayudantes</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Carrusel2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-success">
+            <h5>¿Quienes Somos?</h5>
+            <p>Ayudantes</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Carrusel3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-success">
+            <h5>¿Quienes Somos?</h5>
+            <p>Ayudantes</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+    <div class="container">
+    <div class="row py-4">
+      <hr class="border border-dark opacity-75 mt-5">
+      <h4 class="text-center"><span>Especialidades Cardiológicas</span></h4>
+      <hr class="border border-dark opacity-75">
+      
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+   
+        <div class="col">
+          <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+            <img src="img/Card7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Enfermedades Cardiovasculares</h5>
+              <p class="card-text">La enfermedad cardiovascular es un término amplio para problemas con el corazón y los vasos sanguíneos. 
+                Estos problemas a menudo se deben a la aterosclerosis. Esta afección ocurre cuando la grasa y el colesterol se acumulan en las paredes del vaso sanguíneo (arteria). Esta acumulación se llama placa.
+              </p>
+              <ul>
+              <li>
+              <p>
+                Las principales enfermedades cardiovasculares mas frecuentes son:
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                Insuficiencia cardiaca...
+              </p>
+             </li>
+             </ul>
+              <ul>
+              <li>
+              <p>
+                Hipertensión arterial o tensión arterial alta...
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                Exceso de colesterol...
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                Infarto de miocardio...
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                Angina de pecho...
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                Trastornos del ritmo cardiaco.
+              </p>
+              </li>
+              </ul>
+            </div>
+            <div class="card-footer text-center">
+              <small class="text-body-secondary">24/04/2023</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+            <img src="img/Card8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Electrofisiología Cardíaca Clínica</h5>
+              <p class="card-text">La electrofisiología es la especialización de la cardiología que se dedica al manejo y tratamiento de los pacientes con corazón “lento” (bradicardia, bloqueos AV, entre otros) 
+                y con corazón “rápido” (taquicardias ventriculares, supraventriculares); pacientes con síncope (desmayos) 
+                o con síndrome de muerte súbita.
+              </p>
+              <p>
+                La enfermedad electrofilosofica, trata de los trastornos arrítmicos como palpitaciones, bradicardias o taquicardias.
+              </p>
+              <p class="text-center">
+                Áreas
+              </p>
+              <ul>
+              <li>
+              <p>
+                Clínica de arritmias
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                Clínica síncope y disautonomías
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                Prueba de mesa basculante (tilt table test)
+              </p>
+              </li>
+              </ul>
+              <ul>
+              <li>
+              <p>
+                Monitoría electrocardiográfica continua 24 horas (test de Holter)
+              </p>
+             </li>
+             </ul>
+            </div>
+            <div class="card-footer text-center">
+              <small class="text-body-secondary">24/04/2023</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+            <img src="img/Card9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Medicina Nuclear</h5>
+              <p class="card-text">Es una especialidad en la que se utilizan radiotrazadores o radiofármacos (formados por un fármaco transportador y un isótopo radiactivo) para el diagnóstico y tratamiento de enfermedades. 
+                Estos radiofármacos se aplican dentro del organismo humano por diversas vías (la más utilizada es la vía intravenosa). Una vez que el radiofármaco está dentro del organismo, se distribuye por diversos órganos dependiendo del tipo empleado. 
+                La distribución de este es detectado por un aparato detector de radiación llamado gammacámara y almacenado digitalmente. 
+                Luego se procesa la información obteniendo imágenes de todo el cuerpo o del órgano en estudio. 
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <small class="text-body-secondary">24/04/2023</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+              <img src="img/Card10.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Cardiología Intervencionista</h5>
+                <p class="card-text">Es una subespecialización de la cardiología, que realiza procedimientos mínimamente invasivos, lo que significa que no requieren de heridas extensas para realizar los procedimientos, sino que se ayudan por medio de instrumental pequeño para que las incisiones o cortes sean milimétricos. 
+                    Los hemodinamistas ingresan a las venas y arterias del cuerpo unos tubos largos, huecos delgados, llamados catéteres, con el fin de diagnosticar problemas en la circulación de la sangre o realizar tratamientos en ellas o en el mismo corazón. 
+                    Esos tubos o catéteres pueden llevar con ellos medicamentos, unas pequeñas bombas que se inflan al llegar al lugar de la obstrucción para permitir el flujo de la sangre, otras veces unas pequeñas mallas cilíndricas que se fijan en la parte de la vena o arteria que tenga coágulos o placa de grasa para que dicha malla expanda y restaure el calibre del vaso sanguíneo para deshacer los coágulos y que la sangre pueda circular e irrigar al corazón adecuadamente.
+                </p>
+                <ul>
+                <li>
+                <p>
+                    Las principales enfermedades que trata la hemodinamia son:
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                     Enfermedad coronaria
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                     Enfermedad de las válvulas cardiaca
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                     Enfermedad en otras estructuras del corazón
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                     Cardiomiopatia hipertrófica
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                     Hipertensión
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                     Defectos de corazón de nacimiento o congénitos
+                </p>
+                </li>
+                </ul>
+              </div>
+              <div class="card-footer text-center">
+                <small class="text-body-secondary">24/04/2023</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+              <img src="img/Card11.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Electrofisiología Cardíaca Pediátrica</h5>
+                <p class="card-text">Es la especialidad de la cardiología pediátrica dedicada al diagnóstico y tratamiento de los trastornos del ritmo cardíaco en niños y adolescentes, 
+                    tales como bradicardia (latidos lentos del corazón), taquicardia (latidos rápidos del corazón), y algunos trastornos del sistema nervioso autónomo (síncopes o desmayos).
+                    A su vez, se ocupa de la indicación, implante y seguimiento de los dispositivos de estimulación cardíaca como son marcapasos, desfibriladores y resincronizadores cardíacos. 
+                    Igualmente, del tratamiento definitivo invasivo (endovascular) de las arritmias por medio de estudio electrofisiológico con metodología convencional y por mapeo electroanatómico tridimensional.
+                </p>
+                <p>
+                    El servicio de electrofisiología pediátrica tiene como objetivo atender a la población infantil con trastornos del ritmo cardíaco. 
+                    Las enfermedades más frecuentes que presentan los niños que consultan nuestro servicio son las taquicardias, los extrasístoles, el bloqueo auriculoventricular y el síncope. 
+                    Disponemos de todos los equipos necesarios para poder realizar un estudio detallado y llegar a un diagnóstico certero para definir el mejor tratamiento y tener niños sanos. 
+                </p>
+                <p>
+                    El servicio cuenta con amplia experiencia en el manejo integral de estas enfermedades, y ofrece a la población pediátrica la tecnología más avanzada mediante procedimientos de alta complejidad, 
+                    estando a la vanguardia de la especialidad.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <small class="text-body-secondary">24/04/2023</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100" style="background-color: aliceblue; border-color: black;">
+              <img src="img/Card12.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Enfermedad Vascular Periférica</h5>
+                <p class="card-text">La enfermedad arterial periférica ocurre cuando hay un estrechamiento de los vasos sanguíneos fuera del corazón. La causa de esta enfermedad es la arterioesclerosis. Esto sucede cuando placa se acumula en las paredes de las arterias que abastecen de sangre a brazos y piernas. La placa es una sustancia compuesta por grasa y colesterol y hace que las arterias se estrechen o se obstruyan. 
+                    Esto puede reducir o interrumpir el flujo de sangre, generalmente hacia las piernas. Si la obstrucción del flujo sanguíneo es lo suficientemente grave, puede causar la muerte de los tejidos y, a veces, la amputación del pie o la pierna.
+                </p>
+                <p>El principal factor de riesgo de la enfermedad arterial periférica es el fumar. 
+                   Otros incluyen el envejecimiento y afecciones como la diabetes, colesterol alto, presión arterial alta, enfermedad cardiaca y accidente cerebrovascular.
+                </p>
+                <p>
+                    Muchas personas que tienen enfermedad arterial periférica no presentan síntomas. Si usted tiene síntomas, estos pueden incluir:
+                </p>
+                <ul>
+                <li>
+                <p>
+                     Dolor, entumecimiento, molestia o pesadez en los músculos de las piernas. Esto ocurre al caminar o subir escaleras
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                     Pulso débil o ausente en piernas o pies
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                     Heridas o llagas en los dedos de los pies, pies o piernas que tardan en sanar, no sanan o sanan mal
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                     Color pálido o azulado de la piel
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                     Temperatura más baja en una de las piernas comparada a la otra
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                     Poco crecimiento de las uñas de los pies o del pelo en las piernas
+                </p>
+                </li>
+                </ul>
+                <ul>
+                <li>
+                <p>
+                     Disfunción eréctil, especialmente en hombres diabéticos
+                </p>
+                </li>
+                </ul>
+              </div>
+              <div class="card-footer text-center">
+                <small class="text-body-secondary">24/04/2023</small>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <footer>
+        <div class="row bg-light py-4">
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">©Copyright 2023 Andrés Felipe Balbero</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">Clinica Santa Maria S.A.S</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">Telefono De La Unidad Cardiodiagnostico: (605) 2815665</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">Telefono De La Clinica: 3106538194</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">País: Colombia</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">Lugar: Sincelejo, Sucre</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">Barrio: La Ford</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">Dirección: Carrera 22 #16A-47</p>
+         </div>
+         <div class="col-lg-4">
+           <p class="text-end text-center text-dark mt-4">Citas Medicas: 2812435-2815531</p>
+         </div>
+         <div class="col-lg-6">
+           <p class="text-end text-center text-dark mt-5">Hora: 8:00am a 18:00pm</p>
+         </div>
+         <div class="col-lg-6">
+         <p class="text-end text-center text-dark mt-3">Siguenos En Redes Sociales</p>
+           <ul class="nav justify-content-center gap-2 py-3">
+               <li class="nav-item bg-primary">
+                <a class="nav-link bi-facebook text-light" aria-current="page" href="https://es-la.facebook.com/">Facebook</a>
+               </li>
+               <li class="nav-item bg-danger">
+                 <a class="nav-link bi-instagram text-light" href="https://www.instagram.com/?hl=es">Instagram</a>
+               </li>
+               <li class="nav-item bg-primary">
+                  <a class="nav-link bi-twitter text-light" href="https://twitter.com/">Twitter</a>
+               </li>
+           </ul>
+         </div>
+        </div>
+       </footer>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+</html>
